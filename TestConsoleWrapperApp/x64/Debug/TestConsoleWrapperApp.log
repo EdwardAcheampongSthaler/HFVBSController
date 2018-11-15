@@ -1,0 +1,11 @@
+﻿  HFVBSControlerWrapper.cpp
+c:\users\ed\source\repos\hfvbscontroller\include\hi_bioapi_api.h(16): warning C4005: 'DllImport': macro redefinition
+  c:\users\ed\source\repos\hfvbscontroller\include\bioapi_api.h(18): note: see previous definition of 'DllImport'
+c:\users\ed\source\repos\hfvbscontroller\include\hi_bioapi_api.h(17): warning C4005: 'DllExport': macro redefinition
+  c:\users\ed\source\repos\hfvbscontroller\include\bioapi_api.h(19): note: see previous definition of 'DllExport'
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+HFVBSControlerWrapper.obj : error LNK2028: unresolved token (0A00044B) "public: void __cdecl sthaler::fingopayFVBSApp::Startup(void)" (?Startup@fingopayFVBSApp@sthaler@@$$FQEAAXXZ) referenced in function "public: void __clrcall CPPCLIWrapper::HFVBSControlerWrapper::Startup(void)" (?Startup@HFVBSControlerWrapper@CPPCLIWrapper@@$$FQE$AAMXXZ)
+HFVBSControlerWrapper.obj : error LNK2028: unresolved token (0A00044D) "public: __cdecl sthaler::fingopayFVBSApp::fingopayFVBSApp(void)" (??0fingopayFVBSApp@sthaler@@$$FQEAA@XZ) referenced in function "public: __clrcall CPPCLIWrapper::HFVBSControlerWrapper::HFVBSControlerWrapper(void)" (??0HFVBSControlerWrapper@CPPCLIWrapper@@$$FQE$AAM@XZ)
+HFVBSControlerWrapper.obj : error LNK2019: unresolved external symbol "public: __cdecl sthaler::fingopayFVBSApp::fingopayFVBSApp(void)" (??0fingopayFVBSApp@sthaler@@$$FQEAA@XZ) referenced in function "public: __clrcall CPPCLIWrapper::HFVBSControlerWrapper::HFVBSControlerWrapper(void)" (??0HFVBSControlerWrapper@CPPCLIWrapper@@$$FQE$AAM@XZ)
+HFVBSControlerWrapper.obj : error LNK2019: unresolved external symbol "public: void __cdecl sthaler::fingopayFVBSApp::Startup(void)" (?Startup@fingopayFVBSApp@sthaler@@$$FQEAAXXZ) referenced in function "public: void __clrcall CPPCLIWrapper::HFVBSControlerWrapper::Startup(void)" (?Startup@HFVBSControlerWrapper@CPPCLIWrapper@@$$FQE$AAMXXZ)
+C:\Users\Ed\source\repos\HFVBSController\x64\Debug\TestConsoleWrapperApp.exe : fatal error LNK1120: 4 unresolved externals

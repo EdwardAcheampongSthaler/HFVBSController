@@ -1,0 +1,35 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly HFVBSControllerWrapper, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class HFVBSControllerWrapper.ControllerResult: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Boolean, std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Int32 m_statusCode : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* m_message IsImplicitlyDereferenced : Public
+    Boolean m_success : Public
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class HFVBSControllerWrapper.HFVBSControlerWrapperClass: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SayThis(String): PrivateScope, Public, HideBySig
+    Startup(): PrivateScope, Public, HideBySig
+    Test(): PrivateScope, Public, HideBySig
+    Initialise(): PrivateScope, Public, HideBySig
+    Enroll(): PrivateScope, Public, HideBySig
+    Verify(): PrivateScope, Public, HideBySig
+    ControlBiometricDevice(): PrivateScope, Public, HideBySig
+    Identify(): PrivateScope, Public, HideBySig
+    CancelOperations(): PrivateScope, Public, HideBySig
+    Terminate(): PrivateScope, Public, HideBySig
+    ResetBiometricDevice(): PrivateScope, Public, HideBySig
