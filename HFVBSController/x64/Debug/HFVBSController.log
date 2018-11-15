@@ -1,4 +1,5 @@
-﻿  fingopayFVBS.cpp
+﻿  stdafx.cpp
+  fingopayFVBS.cpp
 c:\users\ed\source\repos\hfvbscontroller\include\hi_bioapi_api.h(16): warning C4005: 'DllImport': macro redefinition
   c:\users\ed\source\repos\hfvbscontroller\include\bioapi_api.h(18): note: see previous definition of 'DllImport'
 c:\users\ed\source\repos\hfvbscontroller\include\hi_bioapi_api.h(17): warning C4005: 'DllExport': macro redefinition

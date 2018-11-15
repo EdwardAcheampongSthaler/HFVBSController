@@ -23,7 +23,7 @@ void HFVBSControllerWrapper::HFVBSControlerWrapperClass::Startup()
 	// do something
 	std::printf("Startup");
 	//call native void method 
-	//fingopayapp -> Startup();
+	fingopayapp -> Startup();
 }
 
 void HFVBSControllerWrapper::HFVBSControlerWrapperClass::Test() {

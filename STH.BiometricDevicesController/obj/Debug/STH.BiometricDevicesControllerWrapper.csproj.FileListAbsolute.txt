@@ -2,8 +2,8 @@ C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\obj\Debu
 C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\obj\Debug\STH.BiometricDevicesControllerWrapper.csproj.CoreCompileInputs.cache
 C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\bin\Debug\STH.BiometricDevicesController.dll
 C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\bin\Debug\STH.BiometricDevicesController.pdb
-C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\bin\Debug\HFVBSControllerWrapper.dll
 C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\bin\Debug\HFVBSControllerWrapper.pdb
 C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\obj\Debug\STH.BiometricDevicesControllerWrapper.csproj.CopyComplete
 C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\obj\Debug\STH.BiometricDevicesController.dll
 C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\obj\Debug\STH.BiometricDevicesController.pdb
+C:\Users\Ed\source\repos\HFVBSController\STH.BiometricDevicesController\bin\Debug\HFVBSControllerWrapper.dll

@@ -61,6 +61,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\Lib\x64\HiBioAPI.lib" />
+    <Library Include="..\Lib\x64\HiBioAPI.lib">
+      <Filter>Header Files</Filter>
+    </Library>
   </ItemGroup>
 </Project>
