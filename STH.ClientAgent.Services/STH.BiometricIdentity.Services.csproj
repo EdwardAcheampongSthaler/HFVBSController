@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE847F97-A8D8-46C5-82E2-6116E6584664}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>STH.BiometricIdentity</RootNamespace>
+    <AssemblyName>STH.BiometricIdentity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\AuthenticationResult.cs" />
+    <Compile Include="Domain\Enum\AuthenticationResultCode.cs" />
+    <Compile Include="Domain\BiometricIdentityRecordService.cs" />
+    <Compile Include="Domain\BiometricResult.cs" />
+    <Compile Include="Domain\BirEnrollmentResult.cs" />
+    <Compile Include="Domain\BirIdentificationResult.cs" />
+    <Compile Include="Domain\BirReEnrollmentResult.cs" />
+    <Compile Include="Domain\BirRemovalResult.cs" />
+    <Compile Include="Domain\BirTemplateModel.cs" />
+    <Compile Include="Domain\BirVerificationResult.cs" />
+    <Compile Include="Interface\IReEnrollBiometricIdentityRecord.cs" />
+    <Compile Include="Domain\Enum\Finger.cs" />
+    <Compile Include="Domain\Enum\Hand.cs" />
+    <Compile Include="Interface\IEnrollBiometricIdentityRecord.cs" />
+    <Compile Include="Interface\IIdentifyBiometricIdentityRecord.cs" />
+    <Compile Include="Interface\IRemoveBiometricIdentityRecord.cs" />
+    <Compile Include="Interface\IVerifyBiometricIdentityRecord.cs" />
+    <Compile Include="Domain\Enum\OperationalStatus.cs" />
+    <Compile Include="Domain\Enum\OperationType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Domain\Enum\TemplateVersion.cs" />
+    <Compile Include="Domain\TransactionLog.cs" />
+    <Compile Include="Domain\VerifyTemplate.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

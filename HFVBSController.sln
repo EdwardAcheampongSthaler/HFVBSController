@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STH.CSharpTestApp", "CSharp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STH.BiometricDevicesControllerWrapper", "STH.BiometricDevicesController\STH.BiometricDevicesControllerWrapper.csproj", "{7EA84AC6-A6B8-439F-9ADF-4EF85327FF4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STH.ClientAgent", "STH.ClientAgent\STH.ClientAgent.csproj", "{F20B1735-E387-495A-AF53-C503B597BB93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STH.BiometricIdentity.Services", "STH.ClientAgent.Services\STH.BiometricIdentity.Services.csproj", "{FE847F97-A8D8-46C5-82E2-6116E6584664}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +81,30 @@ Global
 		{7EA84AC6-A6B8-439F-9ADF-4EF85327FF4C}.Release|x64.Build.0 = Release|Any CPU
 		{7EA84AC6-A6B8-439F-9ADF-4EF85327FF4C}.Release|x86.ActiveCfg = Release|Any CPU
 		{7EA84AC6-A6B8-439F-9ADF-4EF85327FF4C}.Release|x86.Build.0 = Release|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Debug|x64.Build.0 = Debug|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Debug|x86.Build.0 = Debug|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Release|x64.ActiveCfg = Release|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Release|x64.Build.0 = Release|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Release|x86.ActiveCfg = Release|Any CPU
+		{F20B1735-E387-495A-AF53-C503B597BB93}.Release|x86.Build.0 = Release|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Debug|x64.Build.0 = Debug|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Debug|x86.Build.0 = Debug|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Release|x64.ActiveCfg = Release|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Release|x64.Build.0 = Release|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Release|x86.ActiveCfg = Release|Any CPU
+		{FE847F97-A8D8-46C5-82E2-6116E6584664}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
