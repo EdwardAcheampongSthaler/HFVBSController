@@ -21,6 +21,8 @@ Class HFVBSControllerWrapper.ControllerResult: AutoLayout, AnsiClass, Class, Pub
     Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
 Class HFVBSControllerWrapper.HFVBSControlerWrapperClass: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
   Methods:
     SayThis(String): PrivateScope, Public, HideBySig
     Startup(): PrivateScope, Public, HideBySig
@@ -33,3 +35,4 @@ Class HFVBSControllerWrapper.HFVBSControlerWrapperClass: AutoLayout, AnsiClass, 
     CancelOperations(): PrivateScope, Public, HideBySig
     Terminate(): PrivateScope, Public, HideBySig
     ResetBiometricDevice(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

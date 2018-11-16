@@ -1,21 +1,22 @@
 #pragma once
 #include "../HFVBSController/fingopayFVBS.h"
-#include "../HFVBSController/fingopayFVBS.cpp"
+
 #include "ControllerResult.h"
 using namespace sthaler;
 using namespace System;
 
 namespace HFVBSControllerWrapper {
-	public ref class HFVBSControlerWrapperClass
+    public ref class HFVBSControlerWrapperClass
 	{
 		// TODO: Add your methods for this class here.
 	public:
 		HFVBSControlerWrapperClass();
-		//~HFVBSControlerWrapper();
+		~HFVBSControlerWrapperClass();
 		void SayThis(System::String^ phrase);
 		void Startup();
 		void Test();
 
+		// Standard Functions v3
 		int Initialise();
 		int Enroll();
 		int Verify();

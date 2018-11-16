@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "HFVBSControllerWrapper.h"
 #include "../HFVBSController/fingopayFVBS.h"
-#include "../HFVBSController/fingopayFVBS.cpp"
 
 using namespace HFVBSControllerWrapper;
 
@@ -9,6 +8,17 @@ HFVBSControllerWrapper::HFVBSControlerWrapperClass::HFVBSControlerWrapperClass()
 {
 	fingopayapp = new fingopayFVBSApp();
 }
+
+HFVBSControllerWrapper::HFVBSControlerWrapperClass::~HFVBSControlerWrapperClass()
+{
+	delete fingopayapp;
+}
+
+//HFVBSControlerWrapperClass::HFVBSControlerWrapperClass() :
+//	fingopayapp(new sthaler::fingopayFVBSApp)
+//{
+//
+//}
 
 
 void HFVBSControllerWrapper::HFVBSControlerWrapperClass::SayThis(System::String^ phrase)
@@ -30,61 +40,67 @@ void HFVBSControllerWrapper::HFVBSControlerWrapperClass::Test() {
 	std::printf("Firing Test!");
 	fingopayapp->Test();
 }
-//HFVBSControlerWrapperClass::~HFVBSControlerWrapper()
-//{
-//	delete fingopayapp;
-//}
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Initialise()
 {
 	ControllerResult cr(false, "", 200);
+
+	auto result = fingopayapp->Initialise();
 	return 0;
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Enroll()
 {
 	ControllerResult cr(false, "No Result", 200);
+	auto result = fingopayapp->Enroll();
 	return 0;
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Verify()
 {
 	ControllerResult cr(false, "No Result", 200);
+	auto result = fingopayapp->Verify();
 	return 0;
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::ControlBiometricDevice()
 {
 	ControllerResult cr(false, "No Result", 200);
+	auto result = fingopayapp->ControlBiometricDevice();
 	return 0;
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Identify()
 {
 	ControllerResult cr(false, "No Result", 200);
+	auto result = fingopayapp->Identify();
+
 	return 0;
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::CancelOperations()
 {
 	ControllerResult cr(false, "No Result", 200);
+	//fingopayapp->Cancel();
 	return 0;
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Terminate()
 {
 	ControllerResult cr(false, "No Result", 200);
+	auto result = fingopayapp->Terminate();
 	return 0;
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::ResetBiometricDevice()
 {
 	ControllerResult cr(false, "No Result", 200);
+	auto result = fingopayapp->Reset();
 	return 0;
 }
 
 //ControllerResult HFVBSControllerWrapper::HFVBSControlerWrapperClass::Initialise()
-//{
+//{ 
 //	ControllerResult cr(false,"",200);
 //	return cr;
 //}
