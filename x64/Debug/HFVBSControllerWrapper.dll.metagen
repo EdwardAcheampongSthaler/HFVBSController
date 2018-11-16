@@ -34,5 +34,4 @@ Class HFVBSControllerWrapper.HFVBSControlerWrapperClass: AutoLayout, AnsiClass, 
     Identify(): PrivateScope, Public, HideBySig
     CancelOperations(): PrivateScope, Public, HideBySig
     Terminate(): PrivateScope, Public, HideBySig
-    ResetBiometricDevice(): PrivateScope, Public, HideBySig
     Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

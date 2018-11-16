@@ -24,7 +24,6 @@ namespace HFVBSControllerWrapper {
 		int Identify();
 		int CancelOperations();
 		int Terminate();
-		int ResetBiometricDevice();
 		//const ControllerResult Initialise();
 		//const ControllerResult Enroll();
 		//const ControllerResult Verify();

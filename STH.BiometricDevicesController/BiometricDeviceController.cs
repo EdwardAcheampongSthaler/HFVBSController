@@ -39,9 +39,5 @@ namespace STH.BiometricDevicesController
             throw new System.NotImplementedException();
         }
 
-        public InteractionResult ResetBiometricDevice()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

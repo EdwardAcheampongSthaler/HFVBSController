@@ -27,8 +27,8 @@ namespace STH.BiometricDevicesController
         {
             unsafe
             {
-                var response = HfvbsControlerWrapperClass.Initialise();
-                if (response == null) return null;
+                HfvbsControlerWrapperClass.Initialise();
+               
                 return new InteractionResult();
 
             }
@@ -101,15 +101,6 @@ namespace STH.BiometricDevicesController
             }
         }
 
-        public InteractionResult ResetBiometricDevice()
-        {
-            unsafe
-            {
-                var response = HfvbsControlerWrapperClass.ResetBiometricDevice();
-                if (response == null) return null;
-                return new InteractionResult();
-            }
-        }
     }
 
     

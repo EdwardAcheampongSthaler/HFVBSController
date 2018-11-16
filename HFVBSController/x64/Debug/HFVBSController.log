@@ -1,2 +1,17 @@
-﻿  HFVBSController.vcxproj -> C:\Users\Ed\source\repos\HFVBSController\x64\Debug\HFVBSController.lib
-  Warning: Full debug symbol generation from partial PDBs is not supported for static libraries.
+﻿  fingopayFVBS.cpp
+c:\users\ed\source\repos\hfvbscontroller\include\hi_bioapi_api.h(16): warning C4005: 'DllImport': macro redefinition
+  c:\users\ed\source\repos\hfvbscontroller\include\bioapi_api.h(18): note: see previous definition of 'DllImport'
+c:\users\ed\source\repos\hfvbscontroller\include\hi_bioapi_api.h(17): warning C4005: 'DllExport': macro redefinition
+  c:\users\ed\source\repos\hfvbscontroller\include\bioapi_api.h(19): note: see previous definition of 'DllExport'
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(65): warning C4101: 'msg': unreferenced local variable
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(110): warning C4018: '<': signed/unsigned mismatch
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(128): warning C4018: '<': signed/unsigned mismatch
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(100): warning C4101: 'msg': unreferenced local variable
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(187): warning C4101: 'msg': unreferenced local variable
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(239): warning C4101: 'msg': unreferenced local variable
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(348): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+  utilities.cpp
+  Generating Code...
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(103): warning C4700: uninitialized local variable 'rc' used
+  HFVBSController.vcxproj -> C:\Users\Ed\source\repos\HFVBSController\x64\Debug\HFVBSController.lib

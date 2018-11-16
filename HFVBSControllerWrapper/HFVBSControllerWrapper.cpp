@@ -9,10 +9,6 @@ HFVBSControllerWrapper::HFVBSControlerWrapperClass::HFVBSControlerWrapperClass()
 	fingopayapp = new fingopayFVBSApp();
 }
 
-HFVBSControllerWrapper::HFVBSControlerWrapperClass::~HFVBSControlerWrapperClass()
-{
-	delete fingopayapp;
-}
 
 //HFVBSControlerWrapperClass::HFVBSControlerWrapperClass() :
 //	fingopayapp(new sthaler::fingopayFVBSApp)
@@ -20,6 +16,10 @@ HFVBSControllerWrapper::HFVBSControlerWrapperClass::~HFVBSControlerWrapperClass(
 //
 //}
 
+HFVBSControllerWrapper::HFVBSControlerWrapperClass::~HFVBSControlerWrapperClass()
+{
+	delete fingopayapp;
+}
 
 void HFVBSControllerWrapper::HFVBSControlerWrapperClass::SayThis(System::String^ phrase)
 {
@@ -44,7 +44,6 @@ void HFVBSControllerWrapper::HFVBSControlerWrapperClass::Test() {
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Initialise()
 {
 	ControllerResult cr(false, "", 200);
-
 	auto result = fingopayapp->Initialise();
 	return 0;
 }
@@ -81,7 +80,7 @@ int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Identify()
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::CancelOperations()
 {
 	ControllerResult cr(false, "No Result", 200);
-	//fingopayapp->Cancel();
+	fingopayapp->Cancel();
 	return 0;
 }
 
@@ -92,12 +91,6 @@ int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Terminate()
 	return 0;
 }
 
-int HFVBSControllerWrapper::HFVBSControlerWrapperClass::ResetBiometricDevice()
-{
-	ControllerResult cr(false, "No Result", 200);
-	auto result = fingopayapp->Reset();
-	return 0;
-}
 
 //ControllerResult HFVBSControllerWrapper::HFVBSControlerWrapperClass::Initialise()
 //{ 

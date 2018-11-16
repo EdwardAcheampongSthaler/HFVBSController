@@ -13,6 +13,5 @@
         InteractionResult Identify();
         InteractionResult CancelOperations();
         InteractionResult Terminate();
-        InteractionResult ResetBiometricDevice();
     }
 }
