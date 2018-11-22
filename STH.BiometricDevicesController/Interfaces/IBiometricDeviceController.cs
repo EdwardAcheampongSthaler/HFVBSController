@@ -13,5 +13,7 @@
         InteractionResult Identify();
         InteractionResult CancelOperations();
         InteractionResult Terminate();
+        InteractionResult Shutdown();
+        InteractionResult HealthCheck();
     }
 }

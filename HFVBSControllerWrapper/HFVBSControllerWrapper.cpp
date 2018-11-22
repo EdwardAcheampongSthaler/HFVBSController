@@ -1,9 +1,10 @@
 #include "stdafx.h"
 #include "HFVBSControllerWrapper.h"
 #include "../HFVBSController/fingopayFVBS.h"
+#include <msclr\marshal_cppstd.h>
 
 using namespace HFVBSControllerWrapper;
-
+using namespace msclr::interop;
 HFVBSControllerWrapper::HFVBSControlerWrapperClass::HFVBSControlerWrapperClass()
 {
 	fingopayapp = new fingopayFVBSApp();
@@ -35,7 +36,13 @@ void HFVBSControllerWrapper::HFVBSControlerWrapperClass::Startup()
 	//call native void method 
 	fingopayapp -> Startup();
 }
-
+void HFVBSControllerWrapper::HFVBSControlerWrapperClass::Shutdown()
+{
+	// do something
+	std::printf("Shutdown");
+	//call native void method 
+	fingopayapp->Terminate();
+}
 void HFVBSControllerWrapper::HFVBSControlerWrapperClass::Test() {
 	std::printf("Firing Test!");
 	fingopayapp->Test();
@@ -48,11 +55,17 @@ int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Initialise()
 	return 0;
 }
 
-int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Enroll()
+System::String^ HFVBSControllerWrapper::HFVBSControlerWrapperClass::Enroll()
 {
 	ControllerResult cr(false, "No Result", 200);
 	auto result = fingopayapp->Enroll();
-	return 0;
+	//printf(std::string<static_cast>(result));
+	//BYTE *resul = new BYTE[235];
+	/*System::String^ managed = "test";
+	std::string unmanaged = msclr::interop::marshal_as<std::string>(managed);
+	std::printf("returned: %s", result );
+	*///return ()->managed;
+	return gcnew String(marshal_as<String^>(result));
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Verify()

@@ -27,6 +27,7 @@ Class HFVBSControllerWrapper.HFVBSControlerWrapperClass: AutoLayout, AnsiClass, 
     SayThis(String): PrivateScope, Public, HideBySig
     Startup(): PrivateScope, Public, HideBySig
     Test(): PrivateScope, Public, HideBySig
+    Shutdown(): PrivateScope, Public, HideBySig
     Initialise(): PrivateScope, Public, HideBySig
     Enroll(): PrivateScope, Public, HideBySig
     Verify(): PrivateScope, Public, HideBySig

@@ -9,8 +9,7 @@ namespace CSharpTestApp
     {
         static void Main(string[] args)
         {
-            //var wrapper = new BiometricDeviceController();
-            var wrapper = new HfvbsController();
+            var wrapper = new BiometricDeviceController();
 
             // enter a unsafe block
             unsafe

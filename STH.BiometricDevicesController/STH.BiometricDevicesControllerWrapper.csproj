@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HfvbsController.cs" />
     <Compile Include="BiometricDeviceController.cs" />
     <Compile Include="ComparableConfigurationData.cs" />
     <Compile Include="BiometricDeviceControlData.cs" />

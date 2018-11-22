@@ -15,15 +15,18 @@ namespace HFVBSControllerWrapper {
 		void SayThis(System::String^ phrase);
 		void Startup();
 		void Test();
+		void Shutdown();
 
 		// Standard Functions v3
 		int Initialise();
-		int Enroll();
+		System::String^ Enroll();
 		int Verify();
 		int ControlBiometricDevice();
 		int Identify();
 		int CancelOperations();
 		int Terminate();
+	
+
 		//const ControllerResult Initialise();
 		//const ControllerResult Enroll();
 		//const ControllerResult Verify();
