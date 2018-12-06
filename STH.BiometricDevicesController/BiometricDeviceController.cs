@@ -1,4 +1,6 @@
-﻿using STH.BiometricDevicesController.Interfaces;
+﻿using System;
+using System.Text;
+using STH.BiometricDevicesController.Interfaces;
 using HFVBSControllerWrapper;
 
 namespace STH.BiometricDevicesController
@@ -41,9 +43,20 @@ namespace STH.BiometricDevicesController
                 var response = HfvbsControlerWrapperClass.Enroll();
                 if (response == null) return null;
                 // create a new Interaction Result object from response
+                //return new InteractionResult()
+                //{
+                //    Data = Encoding.Default.GetBytes(response),
+                //    Message = "Captured Template",
+                //    StatusCode = 200,
+                //    Success = true
+                //};
+
                 return new InteractionResult()
                 {
-                    Data = new byte[100]
+                    Data = Convert.ToBase64String(Encoding.Default.GetBytes(response)),
+                    Message = "Captured Template",
+                    StatusCode = 200,
+                    Success = true
                 };
             }
         }

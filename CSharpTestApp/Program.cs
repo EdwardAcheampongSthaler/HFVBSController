@@ -9,8 +9,9 @@ namespace CSharpTestApp
     {
         static void Main(string[] args)
         {
+            while (Console.ReadLine() != "end") { 
             var wrapper = new BiometricDeviceController();
-
+            var output = new InteractionResult();
             // enter a unsafe block
             unsafe
             {
@@ -28,24 +29,26 @@ namespace CSharpTestApp
                     switch (command.ToUpper())
                     {
                         case "ENROLL":
-                            wrapper.Enroll();
+                            output = wrapper.Enroll();
                             break;
                         case "IDENTIFY":
-                            wrapper.Identify();
+                            output = wrapper.Identify();
                             break;
                         case "VERIFY":
-                            wrapper.Verify();
+                            output = wrapper.Verify();
                             break;
                         default:
                             Console.WriteLine("ERROR: INVALID COMMAND {UNKNOWN}:" + command);
 
-                            wrapper.CancelOperations();
+                            output = wrapper.CancelOperations();
                             break;
-                    }                
+                    }
                 }
             }
 
-            Console.Read();
+            Console.Write(output.Data.ToString());
+            //Console.Read();
         }
+    }
     }
 }

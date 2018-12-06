@@ -5,6 +5,8 @@
 
 using namespace HFVBSControllerWrapper;
 using namespace msclr::interop;
+using namespace System;
+
 HFVBSControllerWrapper::HFVBSControlerWrapperClass::HFVBSControlerWrapperClass()
 {
 	fingopayapp = new fingopayFVBSApp();
@@ -13,7 +15,7 @@ HFVBSControllerWrapper::HFVBSControlerWrapperClass::HFVBSControlerWrapperClass()
 
 //HFVBSControlerWrapperClass::HFVBSControlerWrapperClass() :
 //	fingopayapp(new sthaler::fingopayFVBSApp)
-//{
+//{	
 //
 //}
 
@@ -65,7 +67,10 @@ System::String^ HFVBSControllerWrapper::HFVBSControlerWrapperClass::Enroll()
 	std::string unmanaged = msclr::interop::marshal_as<std::string>(managed);
 	std::printf("returned: %s", result );
 	*///return ()->managed;
-	return gcnew String(marshal_as<String^>(result));
+	auto str = gcnew String(marshal_as<String^>(result.c_str()));
+	//return marshal_as<System::String>(str);
+	Console::WriteLine("HERE   " + str);
+	return str;
 }
 
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Verify()
@@ -86,7 +91,7 @@ int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Identify()
 {
 	ControllerResult cr(false, "No Result", 200);
 	auto result = fingopayapp->Identify();
-
+	
 	return 0;
 }
 
