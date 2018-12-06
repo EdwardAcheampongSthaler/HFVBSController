@@ -8,11 +8,9 @@ c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(110): 
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(128): warning C4018: '<': signed/unsigned mismatch
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(100): warning C4101: 'msg': unreferenced local variable
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(187): warning C4101: 'msg': unreferenced local variable
-c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(422): warning C4302: 'type cast': truncation from 'BYTE *' to 'char'
-c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(449): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(425): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(239): warning C4101: 'msg': unreferenced local variable
-c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(566): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(568): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(103): warning C4700: uninitialized local variable 'rc' used
   HFVBSController.vcxproj -> C:\Users\Ed\source\repos\HFVBSController\x64\Debug\HFVBSController.lib
