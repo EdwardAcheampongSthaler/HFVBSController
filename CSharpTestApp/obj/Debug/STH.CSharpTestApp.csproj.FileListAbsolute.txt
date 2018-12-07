@@ -1,6 +1,4 @@
 C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\obj\Debug\STH.CSharpTestApp.csproj.CoreCompileInputs.cache
-C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\obj\Debug\CSharpTestApp.exe
-C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\obj\Debug\CSharpTestApp.pdb
 C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\bin\Debug\CSharpTestApp.exe.config
 C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\bin\Debug\CSharpTestApp.exe
 C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\bin\Debug\CSharpTestApp.pdb
@@ -10,3 +8,5 @@ C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\bin\Debug\STH.BiometricDe
 C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\bin\Debug\HFVBSControllerWrapper.pdb
 C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\obj\Debug\STH.CSharpTestApp.csprojAssemblyReference.cache
 C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\obj\Debug\STH.CSharpTestApp.csproj.CopyComplete
+C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\obj\Debug\CSharpTestApp.exe
+C:\Users\Ed\source\repos\HFVBSController\CSharpTestApp\obj\Debug\CSharpTestApp.pdb
