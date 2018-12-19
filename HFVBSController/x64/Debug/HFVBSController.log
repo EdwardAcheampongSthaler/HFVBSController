@@ -1,4 +1,9 @@
-﻿  fingopayFVBS.cpp
+﻿  stdafx.cpp
+  base64.cpp
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\base64.cpp(89): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\base64.cpp(100): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\base64.cpp(114): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+  fingopayFVBS.cpp
 c:\users\ed\source\repos\hfvbscontroller\include\hi_bioapi_api.h(16): warning C4005: 'DllImport': macro redefinition
   c:\users\ed\source\repos\hfvbscontroller\include\bioapi_api.h(18): note: see previous definition of 'DllImport'
 c:\users\ed\source\repos\hfvbscontroller\include\hi_bioapi_api.h(17): warning C4005: 'DllExport': macro redefinition
@@ -8,10 +13,16 @@ c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(110): 
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(128): warning C4018: '<': signed/unsigned mismatch
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(100): warning C4101: 'msg': unreferenced local variable
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(187): warning C4101: 'msg': unreferenced local variable
-c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(511): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(512): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(239): warning C4101: 'msg': unreferenced local variable
-c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(725): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(287): warning C4473: 'sprintf' : not enough arguments passed for format string
+  c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(287): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(287): note: the missing variadic argument 1 is required by format string '%08x'
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(356): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(287): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(245): warning C4101: 'ProcessedBIRHandle': unreferenced local variable
+c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(432): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+  utilities.cpp
+  Generating Code...
 c:\users\ed\source\repos\hfvbscontroller\hfvbscontroller\fingopayfvbs.cpp(103): warning C4700: uninitialized local variable 'rc' used
   HFVBSController.vcxproj -> C:\Users\Ed\source\repos\HFVBSController\x64\Debug\HFVBSController.lib
