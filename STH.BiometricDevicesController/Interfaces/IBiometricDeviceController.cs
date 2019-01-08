@@ -8,6 +8,7 @@
     {
         InteractionResult Initialise(IBiometricDeviceConfigurationData configuration);
         InteractionResult Enroll();
+        InteractionResult EnrollAndVerify();
         InteractionResult Verify();
         InteractionResult ControlBiometricDevice(IBiometricDeviceControlData controlCommandData);
         InteractionResult Identify();

@@ -30,6 +30,7 @@ Class HFVBSControllerWrapper.HFVBSControlerWrapperClass: AutoLayout, AnsiClass, 
     Shutdown(): PrivateScope, Public, HideBySig
     Initialise(): PrivateScope, Public, HideBySig
     Enroll(): PrivateScope, Public, HideBySig
+    EnrollAndVerify(): PrivateScope, Public, HideBySig
     Verify(): PrivateScope, Public, HideBySig
     ControlBiometricDevice(): PrivateScope, Public, HideBySig
     Identify(): PrivateScope, Public, HideBySig

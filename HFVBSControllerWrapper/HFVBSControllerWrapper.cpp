@@ -72,7 +72,21 @@ System::String^ HFVBSControllerWrapper::HFVBSControlerWrapperClass::Enroll()
 	Console::WriteLine("HERE   " + str);
 	return str;
 }
-
+System::String^ HFVBSControllerWrapper::HFVBSControlerWrapperClass::EnrollAndVerify()
+{
+	ControllerResult cr(false, "No Result", 200);
+	auto result = fingopayapp->EnrollAndVerify();
+	//printf(std::string<static_cast>(result));
+	//BYTE *resul = new BYTE[235];
+	/*System::String^ managed = "test";
+	std::string unmanaged = msclr::interop::marshal_as<std::string>(managed);
+	std::printf("returned: %s", result );
+	*///return ()->managed;
+	auto str = gcnew String(marshal_as<String^>(result.c_str()));
+	//return marshal_as<System::String>(str);
+	Console::WriteLine("HERE   " + str);
+	return str;
+}
 int HFVBSControllerWrapper::HFVBSControlerWrapperClass::Verify()
 {
 	ControllerResult cr(false, "No Result", 200);

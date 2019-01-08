@@ -20,6 +20,7 @@ namespace HFVBSControllerWrapper {
 		// Standard Functions v3
 		int Initialise();
 		System::String^ Enroll();
+		System::String^ EnrollAndVerify();
 		int Verify();
 		int ControlBiometricDevice();
 		int Identify();
